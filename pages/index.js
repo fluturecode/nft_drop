@@ -25,7 +25,6 @@ const Home = () => {
                 <div className="header-container">
                     <p className="header">🍭 Candy Drop</p>
                     <p className="sub-text">NFT drop machine with fair mint</p>
-                    {/* Render your connect to wallet button right here */}
                     {renderNotConnectedContainer()}
                 </div>
 
