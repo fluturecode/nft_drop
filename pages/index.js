@@ -1,18 +1,15 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-// This is to disable SSR when using WalletMultiButton
 const WalletMultiButtonDynamic = dynamic(
   async () => (await import("@solana/wallet-adapter-react-ui")).WalletMultiButton,
   { ssr: false }
 );
 
-// Constants
 const TWITTER_HANDLE = "_fluturecode";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const Home = () => {
-    // Actions
     const renderNotConnectedContainer = () => (
         <div>
             <img src="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif" alt="emoji" />
